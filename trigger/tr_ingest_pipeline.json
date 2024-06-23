@@ -1,0 +1,17 @@
+{
+	"name": "tr_ingest_pipeline",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/7bed631c-764e-43a0-9950-f8329b68abff/resourceGroups/adf-covid/providers/Microsoft.Storage/storageAccounts/covidreport2006sa",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
