@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "pl_process_death_cases_data",
 	"properties": {
 		"activities": [
 			{
