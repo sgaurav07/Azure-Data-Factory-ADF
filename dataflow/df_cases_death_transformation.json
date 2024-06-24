@@ -1,0 +1,19 @@
+{
+	"name": "df_cases_death_transformation",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "CasesandDeathSource"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> CasesandDeathSource"
+			]
+		}
+	}
+}
