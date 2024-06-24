@@ -27,7 +27,7 @@
 				"          source as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
-				"     validateSchema: false,",
+				"     validateSchema: true,",
 				"     ignoreNoFilesFound: false) ~> CasesandDeathSource"
 			]
 		}
