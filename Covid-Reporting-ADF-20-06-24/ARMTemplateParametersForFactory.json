@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Covid-Reporting-ADF-20-06-24"
+		},
+		"ls_ablob_covidreport2006sa_connectionString": {
+			"value": ""
+		},
+		"ls_adlsg2_covidreport2006dl_accountKey": {
+			"value": ""
+		},
+		"ls_adlsg2_covidreport2006dl_properties_typeProperties_url": {
+			"value": "https://covidreport2006dl.dfs.core.windows.net/"
+		},
+		"ls_github_csv_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"tr_ingest_pipeline_properties_typeProperties_scope": {
+			"value": "/subscriptions/7bed631c-764e-43a0-9950-f8329b68abff/resourceGroups/adf-covid/providers/Microsoft.Storage/storageAccounts/covidreport2006sa"
+		}
+	}
+}
